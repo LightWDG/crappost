@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title> Exercício 14: trocar figura passando o mouse.</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script language="JavaScript">
+        function mouseEmCima(imagem) {
+            imagem.src = "Sanes.gif";
+            document.body.children[3].src="Megalovania.mp3";
+        }
+
+        function mouseFora(imagem) {
+            imagem.src = "Jevis.gif";
+            document.body.children[3].src="Deltarune Extended.mp3";
+        }
+    </script>
+</head>
+<body>
+    Passe o mouse sobre a imagem: <br><br>
+    <img src="Jevis.gif" onclick="mouseFora(this)" onMouseOver="mouseEmCima(this)"
+        width="300" height="300">
+    <audio src="Deltarune Extended.mp3"  autoplay></audio>
+    <br><br>
+</body>
+
+</html>
